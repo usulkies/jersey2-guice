@@ -2,8 +2,8 @@ plugins {
   id 'net.researchgate.release' version '2.6.0'
 }
 
-task wrapper(type: Wrapper) {
-  gradleVersion = '5.1.1'
+wrapper {
+  gradleVersion = '6.0.1'
 }
 
 allprojects {
@@ -39,8 +39,8 @@ subprojects {
 
   project.ext {
     guiceVersion = '4.2.2'
-    jerseyVersion = '2.28'
-    hk2Version = '2.5.0'
+    jerseyVersion = '2.29.1'
+    hk2Version = '2.6.1'
   }
 
   // Telling Eclipse about the provided scope
@@ -103,7 +103,7 @@ subprojects {
   }
   
   javadoc {
-    classpath.add(configurations.provided)
+//    classpath.add(configurations.provided)
 
     options.links('http://docs.oracle.com/javase/8/docs/api/', 
       'http://docs.oracle.com/javaee/7/api/',

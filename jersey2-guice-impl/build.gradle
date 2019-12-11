@@ -2,7 +2,7 @@
 dependencies {
   compile project(':jersey2-guice-spi')
   
-  compile 'org.slf4j:slf4j-api:1.7.25'
+  compile 'org.slf4j:slf4j-api:1.7.29'
   
   compile 'com.google.code.findbugs:jsr305:3.0.1'
   compile "com.google.inject.extensions:guice-servlet:${project.guiceVersion}"
@@ -25,7 +25,7 @@ dependencies {
   
   provided 'javax.servlet:javax.servlet-api:3.1.0'
   
-  testCompile 'org.eclipse.jetty:jetty-servlet:9.4.14.v20181114'
+  testCompile 'org.eclipse.jetty:jetty-servlet:9.4.24.v20191120'
   testCompile 'org.testng:testng:6.9.10'
 
 }
